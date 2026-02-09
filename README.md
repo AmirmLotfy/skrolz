@@ -1,5 +1,7 @@
 # Skrolz
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Short reads, one story at a time.**  
 A vertical, full-screen content app (TikTok-style) powered by **Google Gemini 3**.
 
@@ -77,3 +79,9 @@ This account is set up as **premium** in the backend for full access (see [TEST_
 
 - **Event:** [Gemini 3 Hackathon — Build what's next](https://gemini3.devpost.com)
 - **Submission:** See [DEVPOST_SUBMISSION.md](DEVPOST_SUBMISSION.md) for pitch, story, and built-with list.
+
+---
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
