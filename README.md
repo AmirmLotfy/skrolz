@@ -35,7 +35,7 @@ This account is set up as **premium** in the backend for full access (see [TEST_
 
 ## Repo & demo
 
-- **Code:** [github.com/YOUR_USERNAME/skrolz](https://github.com/YOUR_USERNAME/skrolz) *(replace with your repo URL after push)*
+- **Code:** [github.com/AmirmLotfy/skrolz](https://github.com/AmirmLotfy/skrolz)
 - **Demo / PWA:** *(add your public app link if you deploy)*
 
 ---
@@ -52,7 +52,7 @@ This account is set up as **premium** in the backend for full access (see [TEST_
 
 1. Clone and install:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/skrolz.git && cd skrolz
+   git clone https://github.com/AmirmLotfy/skrolz.git && cd skrolz
    flutter pub get
    ```
 
