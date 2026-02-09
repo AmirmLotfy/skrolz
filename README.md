@@ -38,7 +38,7 @@ This account is set up as **premium** in the backend for full access (see [TEST_
 ## Repo & demo
 
 - **Code:** [github.com/AmirmLotfy/skrolz](https://github.com/AmirmLotfy/skrolz)
-- **Demo / PWA:** *(add your public app link if you deploy)*
+- **Android APK (testing):** [Download app-release.apk](https://drive.google.com/file/d/1pYCpM-KuAW7JsGY00C8QHmm7SqtZcXmT/view?usp=sharing) — install on your device to try the app; use the test account above to sign in.
 
 ---
 
