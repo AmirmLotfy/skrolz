@@ -1,0 +1,8 @@
+# Keystore properties for release signing
+# Copy this file to android/key.properties and fill in your actual values
+# IMPORTANT: Never commit key.properties to version control!
+
+storePassword=YOUR_STORE_PASSWORD_HERE
+keyPassword=YOUR_KEY_PASSWORD_HERE
+keyAlias=skrolz
+storeFile=../skrolz-release-key.jks

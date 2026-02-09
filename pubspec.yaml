@@ -1,0 +1,94 @@
+name: skrolz_app
+description: "Skrolz - Short reads, one story at a time. Scroll through punchy posts and curated content made for you."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State & routing
+  flutter_riverpod: ^3.2.1
+  go_router: ^17.1.0
+
+  # Backend, subscriptions (OneSignal disabled for now)
+  supabase_flutter: ^2.9.1
+  purchases_flutter: ^9.11.0
+
+  # i18n & media
+  easy_localization: ^3.0.8
+  google_fonts: ^8.0.1
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.2.3
+  lottie: ^3.3.2
+  share_plus: ^10.1.2
+  image_picker: ^1.1.2
+  connectivity_plus: ^6.1.0
+
+  # Local DB (feed cache + offline) — manual schema, no codegen
+  drift: ^2.31.0
+  sqlite3_flutter_libs: ^0.5.30
+  path_provider: ^2.1.5
+  path: ^1.9.0
+  shared_preferences: ^2.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  integration_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/l10n/
+    - assets/images/
+    - assets/animations/
+    - assets/fonts/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # Bundled fonts: uncomment and add PlusJakartaSans-Regular.ttf and Cairo-Regular.ttf to assets/fonts/
+  # (from Google Fonts). Theme uses fontFamily 'Plus Jakarta Sans' / 'Cairo' for offline and metrics.
+  # fonts:
+  #   - family: Plus Jakarta Sans
+  #     fonts:
+  #       - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+  #   - family: Cairo
+  #     fonts:
+  #       - asset: assets/fonts/Cairo-Regular.ttf

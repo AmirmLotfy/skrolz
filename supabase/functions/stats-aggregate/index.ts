@@ -1,0 +1,55 @@
+// stats-aggregate: Aggregate statistics for dashboards
+// TODO: Implement statistics aggregation (user stats, content stats, platform stats)
+import "jsr:@supabase/functions-js/edge-runtime.d.ts";
+import { createClient } from "npm:@supabase/supabase-js@2";
+
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
+};
+
+Deno.serve(async (req: Request) => {
+  if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
+
+  try {
+    const authHeader = req.headers.get("Authorization");
+    if (!authHeader) {
+      return new Response(
+        JSON.stringify({ error: "Unauthorized" }),
+        { status: 401, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    const { type, period, user_id } = (await req.json()) as {
+      type?: "user" | "content" | "platform";
+      period?: "day" | "week" | "month" | "year";
+      user_id?: string;
+    };
+
+    const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
+    const serviceRoleKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
+    const admin = createClient(supabaseUrl, serviceRoleKey);
+
+    // TODO: Implement statistics aggregation
+    // - User statistics (activity, engagement, growth)
+    // - Content statistics (views, engagement, performance)
+    // - Platform statistics (total users, content, engagement)
+    // - Time period filtering
+    // - Aggregated metrics and trends
+
+    return new Response(
+      JSON.stringify({ 
+        message: "Placeholder - Implement statistics aggregation",
+        type,
+        period,
+        user_id 
+      }),
+      { headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  } catch (e) {
+    return new Response(
+      JSON.stringify({ error: String(e) }),
+      { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  }
+});
