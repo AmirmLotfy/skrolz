@@ -57,3 +57,6 @@ key.properties
 
 # Supabase local state
 supabase/.temp/
+
+# Icon generator output (icons are in android/ and ios/ already)
+easyappicon-icons-*/
