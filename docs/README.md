@@ -12,7 +12,7 @@ Setup and operations guides (moved here to keep the repo root clean).
 | [GOOGLE_AUTH_SETUP_STEPS.md](GOOGLE_AUTH_SETUP_STEPS.md) | Google OAuth configuration |
 | [EDGE_FUNCTIONS_SECRETS.md](EDGE_FUNCTIONS_SECRETS.md) | Edge Function env / secrets |
 | [CRON_JOBS.md](CRON_JOBS.md) | Supabase cron jobs |
-| [ONESIGNAL_*](.) | OneSignal push (optional; currently disabled) |
+| ONESIGNAL_*.md | OneSignal push (optional; currently disabled) |
 | [MARKETING_BRIEF.md](MARKETING_BRIEF.md) | Marketing / positioning notes |
 
 For **test account setup** and **hackathon submission**, see the root [TEST_ACCOUNT_SETUP.md](../TEST_ACCOUNT_SETUP.md) and [DEVPOST_SUBMISSION.md](../DEVPOST_SUBMISSION.md).
