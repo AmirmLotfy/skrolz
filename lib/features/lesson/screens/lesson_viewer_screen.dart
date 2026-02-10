@@ -64,7 +64,7 @@ class _LessonViewerScreenState extends State<LessonViewerScreen> {
                   imageUrl: section.imageUrl,
                 ),
               if (hasTakeaway)
-                _TakeawaySlide(takeaway: takeaway!),
+                _TakeawaySlide(takeaway: takeaway),
               if (quiz.isNotEmpty)
                 _QuizSlide(
                   questions: quiz,

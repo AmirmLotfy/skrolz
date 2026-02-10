@@ -8,7 +8,6 @@ import 'package:image_picker/image_picker.dart';
 import 'package:skrolz_app/data/supabase/profile_repository.dart';
 import 'package:skrolz_app/data/supabase/supabase_client.dart';
 import 'package:skrolz_app/providers/auth_provider.dart';
-import 'package:skrolz_app/router/app_router.dart';
 import 'package:skrolz_app/theme/app_colors.dart';
 import 'package:skrolz_app/theme/glass_surface.dart';
 

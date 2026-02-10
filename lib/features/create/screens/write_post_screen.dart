@@ -22,7 +22,6 @@ class _WritePostScreenState extends State<WritePostScreen> {
   String? _error;
   Timer? _autoSaveTimer;
   String? _draftId;
-  Map<String, dynamic>? _initialData;
 
   @override
   void initState() {
@@ -30,7 +29,6 @@ class _WritePostScreenState extends State<WritePostScreen> {
     // Load draft if passed via route
     final extra = GoRouterState.of(context).extra;
     if (extra is Map<String, dynamic>) {
-      _initialData = extra;
       _bodyController.text = extra['body'] as String? ?? '';
       _draftId = extra['draft_id'] as String?;
     }

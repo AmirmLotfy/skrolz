@@ -1,8 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
-import 'package:skrolz_app/router/app_router.dart';
 import 'package:skrolz_app/theme/app_colors.dart';
 import 'package:skrolz_app/theme/card_components.dart';
 import 'package:skrolz_app/theme/glass_surface.dart';

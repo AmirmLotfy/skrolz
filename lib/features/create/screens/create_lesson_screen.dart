@@ -30,7 +30,6 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
   String? _error;
   Timer? _autoSaveTimer;
   String? _draftId;
-  Map<String, dynamic>? _initialData;
 
   @override
   void initState() {
@@ -38,7 +37,6 @@ class _CreateLessonScreenState extends State<CreateLessonScreen> {
     // Load draft if passed via route
     final extra = GoRouterState.of(context).extra;
     if (extra is Map<String, dynamic>) {
-      _initialData = extra;
       _titleController.text = extra['title'] as String? ?? '';
       _quizQuestion = extra['quiz_question'] as String?;
       if (extra['sections'] is List) {

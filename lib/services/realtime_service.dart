@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:supabase_flutter/supabase_flutter.dart' as supabase;
 import 'package:skrolz_app/data/supabase/supabase_client.dart';
 
@@ -29,7 +28,7 @@ class RealtimeService {
           ),
           callback: (payload) {
             final data = payload.newRecord;
-            if (data != null && data['content_id'] == contentId) {
+            if (data['content_id'] == contentId) {
               onInsert(data);
             }
           },
@@ -45,7 +44,7 @@ class RealtimeService {
           ),
           callback: (payload) {
             final data = payload.oldRecord;
-            if (data != null && data['content_id'] == contentId) {
+            if (data['content_id'] == contentId) {
               onDelete(data);
             }
           },
@@ -79,7 +78,7 @@ class RealtimeService {
           ),
           callback: (payload) {
             final data = payload.newRecord;
-            if (data != null && data['content_id'] == contentId) {
+            if (data['content_id'] == contentId) {
               onInsert(data);
             }
           },
@@ -95,7 +94,7 @@ class RealtimeService {
           ),
           callback: (payload) {
             final data = payload.oldRecord;
-            if (data != null && data['content_id'] == contentId) {
+            if (data['content_id'] == contentId) {
               onDelete(data);
             }
           },
