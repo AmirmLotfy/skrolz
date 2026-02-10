@@ -24,7 +24,7 @@ Skrolz brings the short-form, swipeable experience to text. Instead of endless f
 
 | | |
 |---|---|
-| **Android APK** | [Download app-release.apk](https://drive.google.com/file/d/1pYCpM-KuAW7JsGY00C8QHmm7SqtZcXmT/view?usp=sharing) — install on your device and sign in with the test account below. |
+| **Android APK** | [Download app-release.apk](https://drive.google.com/file/d/1awUa2XrIuT1uX_qlWPS2mCMEbj3bxRw1/view?usp=sharing) — install on your device and sign in with the test account below. |
 | **Source code** | [github.com/AmirmLotfy/skrolz](https://github.com/AmirmLotfy/skrolz) |
 
 ### Test account (judges & QA)
